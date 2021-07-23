@@ -1,0 +1,17 @@
+@import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixin';
+@import 'normalize';
+@import 'base';
+
+/* Components */
+
+@import 'components/main-screen';
+@import 'components/header';
+@import 'components/nav-list';
+@import 'components/baner';
+@import 'components/btn';
+@import 'components/content-box';
+@import 'components/features-list';
+@import 'components/individual-solution';
+@import 'components/cases';

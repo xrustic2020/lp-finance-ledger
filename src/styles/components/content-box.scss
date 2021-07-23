@@ -1,0 +1,40 @@
+.content-box {
+  @extend %base-font;
+  padding: 30px 28px;
+
+  &__light-heading {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 25px;
+  }
+
+  &--black-text {
+    color: $dark-color;
+  }
+
+  &--green-box {
+    color: $white-color;
+    background-color: $green-color;
+  }
+}
+
+.content-box__assist-heading {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 5px;
+
+  &--indent {
+    margin-bottom: 15px;
+  }
+}
+
+.content-box__preferred-text {
+  @extend %base-font-line;
+
+  &--indent {
+    margin-bottom: 14px;
+  }
+}

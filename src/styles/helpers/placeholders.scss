@@ -1,0 +1,31 @@
+%base-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+%base-font-line {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%trans-animation {
+  transition: all 200ms linear 100ms;
+}
+
+%base-kit-pseudo-elem {
+  content: '';
+  display: block;
+  position: absolute;
+}

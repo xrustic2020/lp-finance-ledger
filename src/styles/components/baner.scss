@@ -1,0 +1,17 @@
+.baner {
+  @extend %flex-column-center;
+  text-align: center;
+
+  &__heading {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 66px;
+    margin-bottom: 16px;
+  }
+
+  &__paragraph {
+    font-size: 22px;
+    line-height: 37px;
+    margin-bottom: 28px;
+  }
+}

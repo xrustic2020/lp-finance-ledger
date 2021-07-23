@@ -1,0 +1,24 @@
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link::after {
+    @extend %base-kit-pseudo-elem;
+    top: 30px;
+    left: -4px;
+    background-color: transparent;
+    width: calc(100% + 8px);
+    height: 2px;
+  }
+}
+
+.nav-list li {
+  position: relative;
+  @extend %base-font-line;
+
+  &:hover .nav-list__link::after,
+  &:focus .nav-list__link::after {
+    background-color: $green-color;
+  }
+}
