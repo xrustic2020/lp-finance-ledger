@@ -2,12 +2,8 @@
   @extend %base-font;
   padding: 30px 28px;
 
-  &__light-heading {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: 38px;
-    line-height: 48px;
-    margin-bottom: 25px;
+  &__wrapper {
+    margin-bottom: 37px;
   }
 
   &--black-text {
@@ -28,6 +24,19 @@
 
   &--indent {
     margin-bottom: 15px;
+  }
+}
+
+.content-box__light-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 25px;
+
+  &--indent {
+    margin-bottom: 35px;
+    padding: 0 22px;
   }
 }
 

@@ -17,3 +17,11 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main-screen {
+    background-image: url('../images/home/showcase@2x.jpg');
+  }
+}
