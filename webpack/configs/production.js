@@ -1,7 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-// const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
 
 module.exports = env => ({
   devtool: 'source-map',
@@ -50,15 +49,6 @@ module.exports = env => ({
         useShortDoctype: true,
       },
     }),
-    // new HtmlWebpackExternalsPlugin({
-    //   externals: [
-    //     {
-    //       module: 'jquery',
-    //       entry: 'https://unpkg.com/jquery@3.2.1/dist/jquery.min.js',
-    //       global: 'jQuery',
-    //     },
-    //   ],
-    // }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[name].[id].[contenthash].css',

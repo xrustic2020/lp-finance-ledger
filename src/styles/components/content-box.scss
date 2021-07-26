@@ -14,6 +14,11 @@
     color: $white-color;
     background-color: $green-color;
   }
+
+  &--blue-box {
+    color: $white-color;
+    background-color: $blue-color;
+  }
 }
 
 .content-box__assist-heading {
@@ -37,6 +42,10 @@
   &--indent {
     margin-bottom: 35px;
     padding: 0 22px;
+  }
+
+  &--no-indent {
+    margin-bottom: 0;
   }
 }
 

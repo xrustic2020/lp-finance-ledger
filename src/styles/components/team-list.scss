@@ -1,0 +1,21 @@
+.team-list {
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &_image-link {
+    margin-bottom: 10px;
+  }
+
+  &__employee-name {
+    @extend %base-font;
+    font-size: 23px;
+    line-height: 29px;
+    padding-top: 15px;
+    margin-bottom: 11px;
+  }
+
+  &__employee-position {
+    @extend %base-font-line;
+  }
+}

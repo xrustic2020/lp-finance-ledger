@@ -2,7 +2,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
 const paths = require('../utils/paths');
-// const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
 
 module.exports = env => ({
   mode: env.mode,

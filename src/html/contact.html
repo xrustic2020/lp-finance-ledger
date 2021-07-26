@@ -1,0 +1,47 @@
+<section class="contact">
+  <picture>
+    <source
+      srcset="../images/home/contact.webp 1x, ../images/home/contact@2x.webp 2x"
+      type="image/webp"
+    />
+    <img
+      srcset="../images/home/contact.jpg 1x, ../images/home/contact@2x.jpg 2x"
+      src="../images/home/contact.jpg"
+      alt="man trying to call"
+    />
+  </picture>
+  <div class="content-box">
+    <form action="#" method="post" name="callback_form" autocomplete="off">
+      <h2
+        class="content-box__light-heading content-box__light-heading--no-indent"
+      >
+        Request Callback
+      </h2>
+      <div class="form-field">
+        <input
+          type="text"
+          aria-describedby="user-name-hint"
+          class="form-field__input"
+          name="username"
+          id="name"
+        />
+        <label for="name" class="form-field__label">Enter your name</label>
+      </div>
+
+      <div class="form-field form-field--indent">
+        <input
+          type="email"
+          aria-describedby="user-email-hint"
+          class="form-field__input"
+          name="useremail"
+          id="email"
+        />
+        <label for="email" class="form-field__label">Enter email*</label>
+      </div>
+
+      <button type="submit" class="btn btn__submit btn--green-box">
+        <span class="btn__submit--text">Send</span>
+      </button>
+    </form>
+  </div>
+</section>
