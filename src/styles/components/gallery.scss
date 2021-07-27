@@ -15,6 +15,10 @@
     transition-duration: 0.5s;
     opacity: 0.85;
   }
+
+  & a {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
