@@ -1,4 +1,4 @@
-import refs from './refs';
+import refs from '../refs';
 import backToSite from './backToSite'
 
 const submitCallbackForm = function (evt) {

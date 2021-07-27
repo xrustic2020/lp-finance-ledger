@@ -5,8 +5,8 @@
 
   &__item {
     @extend %flex-center;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   &__btn {
@@ -18,8 +18,8 @@
 
   &__svg {
     fill: $white-color;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -43,5 +43,21 @@
   & li:hover {
     transition-duration: 0.5s;
     opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .social-icon__item {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-icon__svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-icon--team-width {
+    width: 55%;
   }
 }

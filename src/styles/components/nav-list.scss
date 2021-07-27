@@ -23,3 +23,24 @@
     background-color: $green-color;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    width: 328px;
+
+    &__link {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__link::after {
+      top: 34px;
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .nav-list {
+    width: 410px;
+  }
+}

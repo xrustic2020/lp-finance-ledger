@@ -1,6 +1,6 @@
 .content-box {
   @extend %base-font;
-  padding: 30px 28px;
+  padding: 0 28px;
   color: $dark-color;
 
   &__wrapper {
@@ -56,4 +56,27 @@
   &--indent {
     margin-bottom: 14px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .content-box__assist-heading {
+    font-size: 20px;
+    line-height: 33px;
+
+    &--indent {
+      margin-bottom: 16px;
+    }
+  }
+
+  .content-box__preferred-text {
+    font-size: 18px;
+    line-height: 28px;
+
+    &--indent {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
 }

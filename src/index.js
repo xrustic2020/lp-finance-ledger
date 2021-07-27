@@ -1,13 +1,14 @@
+import 'lightbox2';
+
 import './styles/main.scss';
-import './scripts/html-chunks/html-chunked'
+import './scripts/html-chunks/html-chunked';
+import './scripts/checkingWebp';
 
-import refs from './scripts/refs'
-import showFixedHeader from './scripts/showFixedHeader'
-import navLinkScrolling from './scripts/navLinkScrolling'
-import submitCallbackForm from './scripts/submitCallbackForm'
+import refs from './scripts/refs';
 
-// import './scripts/additional/lightbox-plus-jquery.min.js'
-// import './scripts/additional/lightbox.min.js';
+import showFixedHeader from './scripts/handlers/showFixedHeader';
+import navLinkScrolling from './scripts/handlers/navLinkScrolling';
+import submitCallbackForm from './scripts/handlers/submitCallbackForm';
 
 window.addEventListener('scroll', showFixedHeader);
 

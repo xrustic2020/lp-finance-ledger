@@ -1,8 +1,4 @@
 .team-list {
-  &__item {
-    margin-bottom: 10px;
-  }
-
   &__image {
     display: block;
   }
@@ -34,6 +30,11 @@
   }
 }
 
+.team-list__item {
+  width: calc(320px - (28px * 2));
+  margin-bottom: 10px;
+}
+
 .team-list__link {
   display: block;
 
@@ -45,10 +46,47 @@
 
 .team-list__image-block {
   position: relative;
+}
 
-  &:hover .team-list__overlay {
-    opacity: 1;
-    visibility: visible;
-    transition-duration: 0.5s;
+.team-list__image-block:hover .team-list__overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.team-list__image-block:hover {
+  transition: all 0.5s;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .team-list__item {
+    margin-right: 20px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: 31.5%;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__employee-name {
+      font-size: 25px;
+      line-height: 32px;
+    }
+
+    &__employee-position {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 }

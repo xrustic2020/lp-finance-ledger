@@ -62,3 +62,15 @@
     @extend %bg-norepeat-center;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1359px) {
+  .modal__text-block {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .modal__text-block {
+    width: 25%;
+  }
+}

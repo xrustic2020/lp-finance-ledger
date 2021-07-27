@@ -1,4 +1,4 @@
-import refs from './refs'
+import refs from '../refs'
 
 const backToSite = function (evt) {
   refs.modalBtn.removeEventListener('click', backToSite)

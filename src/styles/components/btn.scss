@@ -58,3 +58,17 @@
     background-size: 100%;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .btn__text {
+    font-size: 18px;
+  }
+  .btn--with-icon {
+    & .btn__text {
+      line-height: 28px;
+    }
+    &::before {
+      top: 19px;
+    }
+  }
+}

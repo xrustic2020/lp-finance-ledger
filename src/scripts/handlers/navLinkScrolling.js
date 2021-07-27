@@ -1,10 +1,10 @@
-import refs from './refs'
+import refs from '../refs'
 
 const navLinkScrolling = function (evt) {
   evt.preventDefault();
-  const hash = evt.target.attributes[0].value
-  const linkTo = document.querySelector(hash).offsetTop;
   setTimeout(() => {
+    const hash = evt.target.attributes[0].value
+    const linkTo = document.querySelector(hash).offsetTop;
     const scrollHeight =
       linkTo - refs.siteHeader.clientHeight;
     window.scrollTo({
