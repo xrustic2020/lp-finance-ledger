@@ -6,9 +6,7 @@
     height: 64px;
     margin: 0 auto 12px auto;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     background-color: $green-color;
   }
 }

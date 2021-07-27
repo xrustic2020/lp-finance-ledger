@@ -4,4 +4,8 @@
 
 .gallery__item {
   margin-bottom: 7px;
+  &:hover {
+    transition-duration: 0.5s;
+    opacity: 0.85;
+  }
 }

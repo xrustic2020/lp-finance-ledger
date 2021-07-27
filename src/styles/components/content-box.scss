@@ -1,6 +1,7 @@
 .content-box {
   @extend %base-font;
   padding: 30px 28px;
+  color: $dark-color;
 
   &__wrapper {
     margin-bottom: 37px;

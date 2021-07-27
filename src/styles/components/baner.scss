@@ -1,5 +1,6 @@
 .baner {
   @extend %flex-column-center;
+  padding: 0 28px;
   text-align: center;
 
   &__heading {

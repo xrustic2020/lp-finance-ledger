@@ -1,34 +1,42 @@
 .header {
   background-color: rgba(0, 0, 0, 0);
-  padding: 0 28px;
-  margin-bottom: 44px;
+  padding: 0 28px 20px 28px;
+  margin-bottom: 24px;
 
   &__navigation {
-    @extend %flex-column;
+    @extend %flex-column-center;
   }
 
   &__link--green {
     color: $green-color;
   }
+
+  &__logo {
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  &--fixed {
+    position: fixed;
+    background-color: rgba(33, 33, 33, 0.8);
+    z-index: 1;
+  }
 }
 
-.header__logo {
-  position: relative;
-  padding-left: 46px;
+.header__logo-box {
+  display: flex;
+  justify-content: space-between;
+  width: 264px;
   margin: 22px 0 10px;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 42px;
+  position: relative;
 
-  &::before {
-    @extend %base-kit-pseudo-elem;
-    left: 0;
-    top: 6px;
-    width: 39px;
-    height: 30px;
-    background-image: url('../images/icons/book-open.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  &:hover,
+  &:active {
+    transition: all 0.5s;
+    filter: brightness(1.1);
+    transform: scale(1.05);
   }
 }

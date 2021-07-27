@@ -1,26 +1,17 @@
 import './styles/main.scss';
+import './scripts/html-chunks/html-chunked'
+
+import refs from './scripts/refs'
+import showFixedHeader from './scripts/showFixedHeader'
+import navLinkScrolling from './scripts/navLinkScrolling'
+import submitCallbackForm from './scripts/submitCallbackForm'
 
 // import './scripts/additional/lightbox-plus-jquery.min.js'
 // import './scripts/additional/lightbox.min.js';
 
-import header from './html/header.html'
-import featuresList from './html/featured-list.html';
-import individualSolution from './html/individual-solution.html';
-import cases from './html/cases.html'
-import blogPost from './html/blog-post.html'
-import team from './html/team.html';
-import contact from './html/contact.html'
+window.addEventListener('scroll', showFixedHeader);
 
-const markup = [
-  header,
-  featuresList,
-  individualSolution,
-  cases,
-  blogPost,
-  team,
-  contact
-]
+refs.navigation.addEventListener('click', navLinkScrolling)
+refs.home.addEventListener('click', navLinkScrolling)
 
-const body = document.querySelector('body');
-body.innerHTML = markup.join('');
-
+refs.callbackForm.addEventListener('submit', submitCallbackForm)

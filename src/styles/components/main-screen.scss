@@ -1,6 +1,6 @@
 .main-screen {
   position: relative;
-  width: 100%;
+  min-width: 320px;
   height: 533px;
   @extend %base-font;
   color: $white-color;

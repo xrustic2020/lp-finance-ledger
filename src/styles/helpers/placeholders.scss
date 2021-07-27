@@ -13,6 +13,12 @@
   flex-direction: column;
 }
 
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 %flex-column-center {
   display: flex;
   flex-direction: column;
@@ -20,8 +26,9 @@
   align-items: center;
 }
 
-%trans-animation {
-  transition: all 200ms linear 100ms;
+%bg-norepeat-center {
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 %base-kit-pseudo-elem {

@@ -4,28 +4,44 @@
   cursor: pointer;
   color: $white-color;
 
-  &--green-box {
-    border: none;
-    background: $green-color;
-    position: relative;
-  }
-
-  &--transparent {
-    background-color: transparent;
-    border: 1px solid $white-color;
-  }
-
   &__text {
     @extend %base-font-line;
   }
+
+  &__submit {
+    width: 100%;
+    &--text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
 }
 
-.btn__submit {
-  width: 100%;
-  &--text {
-    font-size: 16px;
-    line-height: 22px;
+.btn--green-box {
+  border: none;
+  background: $green-color;
+  position: relative;
+
+  &:hover {
+    transition: all 0.3s;
+    opacity: 0.9;
   }
+}
+
+.btn--transparent {
+  background-color: transparent;
+  border: 1px solid $white-color;
+
+  &:hover {
+    transition: all 0.5s;
+    background-color: $white-color;
+    color: $green-color;
+  }
+}
+
+.content-box--blue-box .btn--transparent:hover {
+  transition: all 0.5s;
+  color: $blue-color;
 }
 
 .btn--with-icon {
@@ -38,8 +54,7 @@
     width: 8px;
     height: 12px;
     background-image: url('../images/icons/angle-right-solid.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %bg-norepeat-center;
     background-size: 100%;
   }
 }
