@@ -18,7 +18,8 @@
   @extend %base-font-line;
 
   &:hover .nav-list__link::after,
-  &:focus .nav-list__link::after {
+  &:focus .nav-list__link::after,
+  &:active .nav-list__link::after {
     transition: all 0.5s;
     background-color: $green-color;
   }
