@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
     "build": "webpack --env.mode production --config ./webpack/config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/xrustic2020/lp-finance-ledger/issues"
   },
-  "homepage": "https://github.com/xrustic2020/lp-finance-ledger",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",

@@ -3,11 +3,12 @@
 
   <div class="contact__text-box content-box" id="contact">
     <form
-      method="post"
       name="callback_form"
+      method="post"
       autocomplete="off"
       data-netlify="true"
       id="callback-form"
+      netlify
     >
       <h2
         class="content-box__light-heading content-box__light-heading--no-indent"
@@ -19,7 +20,7 @@
           type="text"
           aria-describedby="user-name-hint"
           class="form-field__input"
-          name="username"
+          name="name"
           id="name"
           required
           minlength="2"
@@ -33,7 +34,7 @@
           type="email"
           aria-describedby="user-email-hint"
           class="form-field__input"
-          name="useremail"
+          name="email"
           id="email"
           required
           placeholder="myemail@gmail.com"
