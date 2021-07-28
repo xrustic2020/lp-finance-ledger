@@ -1,10 +1,16 @@
-import refs from '../refs'
+import refs from '../refs';
 
 const navLinkScrolling = function (evt) {
   evt.preventDefault();
   setTimeout(() => {
-    const hash = evt.target.attributes[0].value
+    const node = evt.target.nodeName;
+
+    if (node !== "A" && node !== "SPAN") return;
+    let hash;
+    node === "SPAN" ? hash = "#home" : hash = evt.target.attributes[0].value;
+
     const linkTo = document.querySelector(hash).offsetTop;
+
     const scrollHeight =
       linkTo - refs.siteHeader.clientHeight;
     window.scrollTo({

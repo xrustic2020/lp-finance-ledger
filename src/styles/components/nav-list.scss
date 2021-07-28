@@ -2,8 +2,11 @@
   width: 280px;
   display: flex;
   justify-content: space-between;
+}
 
-  &__link::after {
+.nav-list__link {
+  display: block;
+  &::after {
     @extend %base-kit-pseudo-elem;
     top: 30px;
     left: -4px;

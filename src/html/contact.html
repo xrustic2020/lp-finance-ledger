@@ -3,18 +3,27 @@
 
   <div class="contact__text-box content-box" id="contact">
     <form
+      action="/"
       name="callback_form"
       method="post"
       autocomplete="off"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
       id="callback-form"
-      netlify
     >
       <h2
         class="content-box__light-heading content-box__light-heading--no-indent"
       >
         Request Callback
       </h2>
+      <!-- The `form-name` hidden field is required to support form submissions without JavaScript -->
+      <input type="hidden" name="form-name" value="callback_form" />
+      <p hidden>
+        <label>
+          Don’t fill this out:
+          <input name="bot-field" />
+        </label>
+      </p>
       <div class="form-field">
         <input
           type="text"

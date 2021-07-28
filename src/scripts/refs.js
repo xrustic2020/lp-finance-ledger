@@ -11,8 +11,8 @@ const refs = {
   callbackForm: document.querySelector('form[name="callback_form"]'),
   modal: document.querySelector('.modal'),
   modalBtn: document.querySelector('.modal__btn'),
-  nameInput: document.querySelector('input[type="text"]'),
-  emailInput: document.querySelector('input[type="email"]')
+  nameInput: document.getElementById('name'),
+  emailInput: document.getElementById('email')
 }
 
 export default refs;

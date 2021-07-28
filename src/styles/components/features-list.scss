@@ -1,13 +1,19 @@
 .features-list {
   @extend %flex-column-center;
 
-  &__image {
+  &__icon-box {
     width: 64px;
     height: 64px;
     margin: 0 auto 12px auto;
     border-radius: 50%;
     @extend %flex-center;
     background-color: $green-color;
+  }
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+    fill: $white-color;
   }
 }
 
@@ -30,7 +36,7 @@
     padding-top: 40px;
     padding-bottom: 48px;
 
-    &__image {
+    &__icon-box {
       width: 67px;
       height: 67px;
       margin-bottom: 15px;
